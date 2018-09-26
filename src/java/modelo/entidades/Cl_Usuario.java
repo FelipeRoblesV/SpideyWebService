@@ -44,7 +44,4 @@ public class Cl_Usuario {
     public String toString() {
         return "Cl_Usuario{" + "run=" + run + ", pass=" + pass + ", rol=" + rol + '}';
     }
-
-
-    
 }
