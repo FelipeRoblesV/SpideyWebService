@@ -1,37 +1,30 @@
 package test;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
-import modelo.controlador.daoFuncionario;
-import modelo.controlador.daoUsuario;
-import modelo.entidades.CL_Funcionario;
-import modelo.entidades.Cl_Jefe_Funcionario;
-import modelo.entidades.Cl_perfil;
+import modelo.controlador.daoWebService;
+import modelo.entidades.Cl_Persona;
 
 public class test {
 
     public static void main(String[] args) throws Exception {
-        CL_Funcionario fun = new CL_Funcionario();
-//        Cl_perfil per = new Cl_perfil();
-//        Cl_Jefe_Funcionario jefe = new Cl_Jefe_Funcionario();
-//        jefe.setNombre("hola");
-//        per.setNombre("hola");
-//        fun.setPerfil(per);
-//        fun.setRun_jefe(jefe);
-//        List<CL_Funcionario> lista = new ArrayList<CL_Funcionario>();
-//         daoFuncionario dao = new daoFuncionario();
-//        lista = dao.ListarFuncionarios();
-//
-//        Iterator iter = lista.iterator();
-//            while(iter.hasNext()){
-//            fun = (CL_Funcionario)iter.next();
-//            }
-//            System.out.println(fun.getFecha_nacimiento());
+        String rut = "19362296";
+        List<Cl_Persona> lista = new ArrayList<Cl_Persona>();
+
+        daoWebService dao = new daoWebService();
+        lista= dao.ListarPersona(rut);
+        Cl_Persona persona;
+        Iterator iter = lista.iterator();
+        while (iter.hasNext()) {
+            persona = (Cl_Persona) iter.next();
+            System.out.println(persona.toString());
+
+        }
+
+      //  System.out.println(persona.getRut());
+   //     System.out.println(persona.getNombre());
 
     }
-    
+
 }

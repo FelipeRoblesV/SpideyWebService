@@ -7,8 +7,8 @@ public class contexto {
 
     private static Connection conexion;
 
-    private String usuario = "frobles2";
-    private String pass = "frobl1234";
+    private String usuario = "canlid";
+    private String pass = "dbbd3";
     private String host = "159.89.86.128";
     private String port = "4921";
     private String sid = "xe";
@@ -19,7 +19,7 @@ public class contexto {
         try {
             Class.forName("oracle.jdbc.OracleDriver").newInstance();
             this.conexion = DriverManager.getConnection(url, usuario, pass);
-        } catch (Exception e) {
+        } catch (Exception ex) {
             System.out.println("Error");
         }
     }
