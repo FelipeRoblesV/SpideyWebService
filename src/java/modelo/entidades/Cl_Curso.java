@@ -3,16 +3,24 @@ package modelo.entidades;
 public class Cl_Curso {
     private int id;
     private String nombre;
-    private String curso;
+    private String Siglas;
     private String institucion;
 
-    public Cl_Curso(int id, String nombre, String curso, String institucion) {
+    public Cl_Curso(int id, String nombre, String Siglas, String institucion) {
         this.id = id;
         this.nombre = nombre;
-        this.curso = curso;
+        this.Siglas = Siglas;
         this.institucion = institucion;
     }
 
+    public String getSiglas() {
+        return Siglas;
+    }
+
+    public void setSiglas(String Siglas) {
+        this.Siglas = Siglas;
+    }
+    
     public Cl_Curso() {
     }
 
@@ -32,13 +40,6 @@ public class Cl_Curso {
         this.nombre = nombre;
     }
 
-    public String getCurso() {
-        return curso;
-    }
-
-    public void setCurso(String curso) {
-        this.curso = curso;
-    }
 
     public String getInstitucion() {
         return institucion;
@@ -48,12 +49,4 @@ public class Cl_Curso {
         this.institucion = institucion;
     }
 
-    @Override
-    public String toString() {
-        return "Cl_Curso{" + "id=" + id + ", nombre=" + nombre + ", curso=" + curso + ", institucion=" + institucion + '}';
-    }
-    
-    
-    
-    
 }

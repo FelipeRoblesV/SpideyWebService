@@ -5,7 +5,8 @@ import java.util.Date;
 
 public class Cl_Persona {
     
-    private String rut;
+    private String run;
+    private String dv;
     private String nombre;
     private String apellido;
     private String sexo;
@@ -16,8 +17,9 @@ public class Cl_Persona {
     public Cl_Persona() {
     }
 
-    public Cl_Persona(String rut, String nombre, String apellido, String sexo, Date fechaNacimiento, String correo, String telefono) {
-        this.rut = rut;
+    public Cl_Persona(String run, String dv, String nombre, String apellido, String sexo, Date fechaNacimiento, String correo, String telefono) {
+        this.run = run;
+        this.dv = dv;
         this.nombre = nombre;
         this.apellido = apellido;
         this.sexo = sexo;
@@ -26,14 +28,23 @@ public class Cl_Persona {
         this.telefono = telefono;
     }
 
-    public String getRut() {
-        return rut;
+    public String getRun() {
+        return run;
     }
 
-    public void setRut(String rut) {
-        this.rut = rut;
+    public void setRun(String run) {
+        this.run = run;
     }
 
+    public String getDv() {
+        return dv;
+    }
+
+    public void setDv(String dv) {
+        this.dv = dv;
+    }
+
+    
     public String getNombre() {
         return nombre;
     }
@@ -80,11 +91,6 @@ public class Cl_Persona {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
-    }
-
-    @Override
-    public String toString() {
-        return "Cl_Persona{" + "rut=" + rut + ", nombre=" + nombre + ", apellido=" + apellido + ", sexo=" + sexo + ", fechaNacimiento=" + fechaNacimiento + ", correo=" + correo + ", telefono=" + telefono + '}';
     }
 
 }
