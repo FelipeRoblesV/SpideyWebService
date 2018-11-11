@@ -20,6 +20,24 @@ public class test {
       //  System.out.println(persona.getRut());
    //     System.out.println(persona.getNombre());
 
+       //  System.out.println(persona.getRut());
+   //     System.out.println(persona.getNombre());
+    //  System.out.println(persona.getRut());
+   //     System.out.println(persona.getNombre());
+    //  System.out.println(persona.getRut());
+   //     System.out.println(persona.getNombre());
+    //  System.out.println(persona.getRut());
+   //     System.out.println(persona.getNombre());
+    //  System.out.println(persona.getRut());
+   //     System.out.println(persona.getNombre());
+    //  System.out.println(persona.getRut());
+   //     System.out.println(persona.getNombre());
+
+   
+   
+   
+   
+   
     }
 
 }
